@@ -183,7 +183,7 @@
 </section>
 
 <script>
-	$(function(){
+	$(function() {
 		$('.spring').each(function(i, e){
 			var $uxPaging = $(e).find('.page');
 			var $uxCur = $(e).find('.cur');
@@ -198,7 +198,7 @@
 			var uxlen = 4;
 			var uxpage = Math.ceil($uxLstItem.length / uxlen);
 			$uxTotal.text(uxpage);
-
+			
 			uxSlice(uxcur);
 			function uxSlice(uxcur){
 				var uxidx = uxcur * uxlen;
@@ -217,7 +217,7 @@
 			$uxBtnPrev.on('click', function(){
 				uxcur --;
 				uxSlice(uxcur);
-				if(uxcur <0){
+				if(uxcur < 0){
 					uxcur = uxpage-1;
 					uxSlice(uxcur);
 				}
