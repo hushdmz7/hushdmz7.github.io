@@ -1,5 +1,5 @@
 $(function() {
-	$('.spring').each(function(i, e){
+	$('.sh_spring').each(function(i, e){
 		let $uxPaging = $(e).find('.page');
 		let $uxCur = $(e).find('.cur');
 		let $uxTotal = $(e).find('.total');
