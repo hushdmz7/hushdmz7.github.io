@@ -8,20 +8,6 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 <script>
-$(function(){
-	$(window).on('load',function(){
-		$.ajax({
-			url:'ajax.html',
-			dataType:"html",
-			success:function(data){
-				$('#main').html(data);
-			},
-			error:function(data){
-				$('#main').text('데이터를 가져오는데 실패하였습니다.');
-			}
-		});
-	});
-});
 </script>
 </head>
 
